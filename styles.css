@@ -26,7 +26,7 @@ body {
 #hero-text {
     color: white;
     background: rgb(0, 0, 0, 30%);
-    font-size: 5vw;
+    font-size: max(5vw, 30px)
 }
 
 #header {
@@ -103,6 +103,7 @@ li {
         display: flex;
         margin-left: auto;
         margin-right: 400px;
+        padding-right: 100px;
     }
   }
 
@@ -161,6 +162,7 @@ li {
 #hero-image {
     padding: 0px;
     width: 100%;
+    min-height: 400px;
     margin: 0px;
 }
 
@@ -178,7 +180,9 @@ li {
 #menu-btn {
     width: 12vw;
     height: 6vw;
-    font-size: 2vw;
+    min-width: 100px;
+    min-height: 50px;
+    font-size: max(2vw, 18px);
     font-family: 'Poppins';
     background-color: #f2f2f2;
     border: 0px;
@@ -201,6 +205,11 @@ a > button:hover {
     margin: 10px 0px 10px 2vw;
 }
 
+#about-us-subheading > span {
+    background-color: white;
+    padding: 1px 0px;
+}
+
 #about-us-paragraph {
     font-size: calc(12px + 2vw);
     font-size: max(20px);
@@ -219,6 +228,11 @@ a > button:hover {
     font-size: calc(22px + 2vw);
     font-family: 'League Spartan';
     margin: 100px 0px 10px 2vw;
+}
+
+.sub-title > span {
+    background-color: white;
+    padding: 10px;
 }
 
 #menu {
@@ -272,6 +286,11 @@ a > button:hover {
     font-size: calc(18px + 2vw);
     font-family: 'Poppins';
     margin: 50px 0px 10px 2vw;
+}
+
+.menu-subheading > span {
+    background-color: white;
+    padding: 10px;
 }
 
 #footer {
